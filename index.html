@@ -1,5 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head><title>My New WebSite</title></head>
-  <body><h1>Hello DevOps!</h1></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate on Scroll (AOS) library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-lg z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">My Portfolio</h1>
+      <div class="space-x-6">
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#tutorial" class="hover:text-indigo-600 transition">Git Tutorial</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white"
+           data-aos="fade-up">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Anmol Behal 👋</h1>
+    <p class="text-xl mb-6">A passionate DevOps enthusiast learning Git & GitHub</p>
+    <a href="#about" class="px-6 py-3 bg-white text-indigo-600 rounded-full shadow-lg hover:scale-105 transition transform">Explore</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 max-w-6xl mx-auto px-6" data-aos="fade-right">
+    <h2 class="text-4xl font-bold text-indigo-600 mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed">
+      I'm Anmol, an aspiring DevOps Engineer with a keen interest in automation, CI/CD, and cloud technologies. 
+      This portfolio showcases my learning journey with Git & GitHub, along with hands-on projects.
+    </p>
+  </section>
+
+  <!-- Git & GitHub Tutorial Section -->
+  <section id="tutorial" class="py-20 bg-gray-100" data-aos="fade-left">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-indigo-600 mb-8">Git & GitHub Tutorial</h2>
+      
+      <!-- Step 1 -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2">🚀 Getting Started</h3>
+        <p class="mb-4">Set up your username and email for Git:</p>
+        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+        </pre>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2">📂 Initialize Repository</h3>
+        <p class="mb-4">Create a project folder and initialize Git:</p>
+        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+mkdir devops-git-project
+cd devops-git-project
+git init
+        </pre>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2">📌 First Commit</h3>
+        <p class="mb-4">Add a README file and commit:</p>
+        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+echo "# My First Git Repo" > README.md
+git add README.md
+git commit -m "Initial commit with README"
+        </pre>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2">🌐 Push to GitHub</h3>
+        <p class="mb-4">Link your repo and push changes:</p>
+        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+git remote add origin https://github.com/username/devops-git-project.git
+git branch -M main
+git push -u origin main
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6 text-center" data-aos="fade-up">
+    <p>© 2025 Anmol Behal | Built with 💙 Tailwind CSS</p>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+</body>
 </html>
