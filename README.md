@@ -17,7 +17,7 @@ This repository contains my **portfolio website** + a **Git & GitHub tutorial** 
 ---
 
 ## 🌐 Live Portfolio  
-🔗 **[Check out my Portfolio here](https://anmolbehal.github.io/)**  
+🔗 **[Check out my Portfolio here](https://anmolbehal.github.io/devops-git-project/)**  
 
 ---
 
