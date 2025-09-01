@@ -3,103 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <!-- Tailwind CSS CDN -->
+  <title>Anmol's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Animate on Scroll (AOS) library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-900 text-gray-100 font-sans">
 
   <!-- Navbar -->
-  <nav class="fixed w-full bg-white shadow-lg z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">My Portfolio</h1>
+  <nav class="fixed w-full bg-gray-800 bg-opacity-90 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-400">Anmol's Portfolio</h1>
       <div class="space-x-6">
-        <a href="#about" class="hover:text-indigo-600 transition">About</a>
-        <a href="#tutorial" class="hover:text-indigo-600 transition">Git Tutorial</a>
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#tutorial" class="hover:text-indigo-400 transition">Git Tutorial</a>
+        <a href="#repos" class="hover:text-indigo-400 transition">Projects</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white"
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white"
            data-aos="fade-up">
     <h1 class="text-5xl font-bold mb-4">Hi, I'm Anmol Behal 👋</h1>
-    <p class="text-xl mb-6">A passionate DevOps enthusiast learning Git & GitHub</p>
-    <a href="#about" class="px-6 py-3 bg-white text-indigo-600 rounded-full shadow-lg hover:scale-105 transition transform">Explore</a>
+    <p class="text-xl mb-6">DevOps Enthusiast | Cloud Learner | Open Source Explorer</p>
+    <a href="#about" class="px-6 py-3 bg-white text-indigo-600 rounded-full shadow-lg hover:scale-105 transition transform">
+      Explore
+    </a>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About Me -->
   <section id="about" class="py-20 max-w-6xl mx-auto px-6" data-aos="fade-right">
-    <h2 class="text-4xl font-bold text-indigo-600 mb-6">About Me</h2>
-    <p class="text-lg leading-relaxed">
-      I'm Anmol, an aspiring DevOps Engineer with a keen interest in automation, CI/CD, and cloud technologies. 
-      This portfolio showcases my learning journey with Git & GitHub, along with hands-on projects.
+    <h2 class="text-4xl font-bold text-indigo-400 mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed text-gray-300">
+      I'm Anmol, an aspiring DevOps Engineer passionate about automation, CI/CD, 
+      and cloud technologies. This portfolio highlights my Git & GitHub journey, 
+      personal projects, and learning path in DevOps.
     </p>
   </section>
 
-  <!-- Git & GitHub Tutorial Section -->
-  <section id="tutorial" class="py-20 bg-gray-100" data-aos="fade-left">
+  <!-- Git Tutorial -->
+  <section id="tutorial" class="py-20 bg-gray-800" data-aos="fade-left">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-indigo-600 mb-8">Git & GitHub Tutorial</h2>
-      
-      <!-- Step 1 -->
-      <div class="mb-8">
-        <h3 class="text-2xl font-semibold mb-2">🚀 Getting Started</h3>
-        <p class="mb-4">Set up your username and email for Git:</p>
-        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+      <h2 class="text-4xl font-bold text-indigo-400 mb-8">📚 Git & GitHub Tutorial</h2>
+
+      <div class="space-y-10">
+        <!-- Step 1 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">🚀 Getting Started</h3>
+          <p class="mb-4">Set your username and email:</p>
+          <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
-        </pre>
-      </div>
+          </pre>
+        </div>
 
-      <!-- Step 2 -->
-      <div class="mb-8">
-        <h3 class="text-2xl font-semibold mb-2">📂 Initialize Repository</h3>
-        <p class="mb-4">Create a project folder and initialize Git:</p>
-        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+        <!-- Step 2 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">📂 Initialize Repository</h3>
+          <p class="mb-4">Create a new repo locally:</p>
+          <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
 mkdir devops-git-project
 cd devops-git-project
 git init
-        </pre>
-      </div>
+          </pre>
+        </div>
 
-      <!-- Step 3 -->
-      <div class="mb-8">
-        <h3 class="text-2xl font-semibold mb-2">📌 First Commit</h3>
-        <p class="mb-4">Add a README file and commit:</p>
-        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+        <!-- Step 3 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">📌 First Commit</h3>
+          <p class="mb-4">Add a README and commit:</p>
+          <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
 echo "# My First Git Repo" > README.md
 git add README.md
 git commit -m "Initial commit with README"
-        </pre>
-      </div>
+          </pre>
+        </div>
 
-      <!-- Step 4 -->
-      <div class="mb-8">
-        <h3 class="text-2xl font-semibold mb-2">🌐 Push to GitHub</h3>
-        <p class="mb-4">Link your repo and push changes:</p>
-        <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
+        <!-- Step 4 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">🌐 Push to GitHub</h3>
+          <p class="mb-4">Link remote and push:</p>
+          <pre class="bg-black text-green-400 p-4 rounded-lg shadow-lg overflow-x-auto">
 git remote add origin https://github.com/username/devops-git-project.git
 git branch -M main
 git push -u origin main
-        </pre>
+          </pre>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- GitHub Repo Showcase -->
+  <section id="repos" class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-400 mb-10 text-center">🚀 Featured GitHub Projects</h2>
+    <div id="repo-container" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-indigo-600 text-white py-6 text-center" data-aos="fade-up">
-    <p>© 2025 Anmol Behal | Built with 💙 Tailwind CSS</p>
+  <footer class="bg-gray-800 text-gray-400 py-6 text-center" data-aos="fade-up">
+    <p>© 2025 Anmol Behal | Built with 💙 Tailwind CSS & GitHub API</p>
   </footer>
 
+  <!-- Scripts -->
   <script>
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
+    AOS.init({ duration: 1000, once: true });
+
+    const username = "AnmolBehal"; // Your GitHub username
+    const container = document.getElementById("repo-container");
+
+    async function fetchRepos() {
+      const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+      const repos = await res.json();
+
+      const filtered = repos.filter(r => !r.fork).slice(0, 6); // top 6
+
+      filtered.forEach(repo => {
+        const card = document.createElement("div");
+        card.className =
+          "bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition transform flex flex-col justify-between";
+        card.setAttribute("data-aos", "fade-up");
+
+        card.innerHTML = `
+          <h3 class="text-xl font-bold text-indigo-300 mb-2">${repo.name}</h3>
+          <p class="text-gray-400 mb-4">${repo.description || "No description provided."}</p>
+          <div class="flex items-center text-sm text-gray-400 space-x-4 mb-4">
+            <span>⭐ ${repo.stargazers_count}</span>
+            <span>🍴 ${repo.forks_count}</span>
+            <span>🕑 ${new Date(repo.updated_at).toLocaleDateString()}</span>
+          </div>
+          <div class="mt-auto flex space-x-4">
+            <a href="${repo.html_url}" target="_blank" class="px-4 py-2 bg-indigo-500 rounded-lg hover:bg-indigo-600 transition">GitHub</a>
+            ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="px-4 py-2 bg-pink-500 rounded-lg hover:bg-pink-600 transition">Live Demo</a>` : ""}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    fetchRepos();
   </script>
 </body>
 </html>
